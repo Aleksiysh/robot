@@ -5,7 +5,15 @@ from pyrob.api import *
 
 @task(delay=0.05)
 def task_4_3():
-    pass
+    move_right()
+    for i in range(12):
+        for j in range(27):
+            fill_cell()
+            move_right()
+        move_left(27)   
+        move_down() 
+
+
 
 
 if __name__ == '__main__':
