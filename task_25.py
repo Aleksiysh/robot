@@ -23,6 +23,7 @@ def task_2_2():
         cross()
         for j in range(4):
             if wall_is_on_the_right():
+                move_left(2)
                 break
             else:    
                 move_right()
