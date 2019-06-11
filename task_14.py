@@ -7,7 +7,6 @@ from pyrob.api import *
 def task_8_11():
        while True:
         if not wall_is_above():
-            # or wall_is_beneath():
             fill_up()
         if not wall_is_beneath():
             fill_down()
